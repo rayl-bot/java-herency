@@ -6,7 +6,8 @@ public abstract class Persona {
 	 */
 	protected String nombre, sexo;
 	protected int edad;
-	
+	protected boolean asistir;
+
 	/**
 	 * @param nombre
 	 * @param sexo
@@ -18,7 +19,9 @@ public abstract class Persona {
 		this.sexo = sexo;
 		this.edad = edad;
 	}
-	
-	//public abstract 
-	
+
+	// metodo que mediante un numero aleatorio dira si el alumno/profe asiste a
+	// clase o no
+	public abstract boolean noAsistir();
+
 }
